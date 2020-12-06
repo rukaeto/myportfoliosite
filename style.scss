@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
 }
-  body{
+body{
   background-color: aliceblue;
   font-family: sans-serif;
   font-size: 15px;
@@ -12,9 +12,14 @@
   "header" 500px
   "about" 300px
   "works" 400px
-  "footer" 100px
+  "footer" 150px
   / 1fr;
 }
+a:hover {
+  color: #5983ff;
+  text-decoration: none;
+}
+
 
 li {
   list-style: none;
@@ -26,15 +31,18 @@ header{
   background: linear-gradient(#05ff05, #00b7ff);
   width:100vw;
   line-height: 440px;
-   h1{
-    font-size:60px;
+  h1{
+   font-size:60px;
    }
 }
 
 
 nav{
   grid-area:nav ;
-
+  background-color:lavender;
+  position:fixed;
+  top:0px;
+  width: 100%;
 
 }
 .gnav-list{
@@ -79,8 +87,10 @@ padding:0px 40px;
 }
 
 footer{
-  grid-area:footer; 
+  grid-area:footer;
   text-align: center;
+  background-color: black;
+  color:white;
     h2{
       font-size:40px;
     }
@@ -89,7 +99,7 @@ footer{
 
 @media screen and (max-width:750px){
     body{
-      grid-template: 
+      grid-template:
       "header"
       "center"
       "left"

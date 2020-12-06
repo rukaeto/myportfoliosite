@@ -10,7 +10,12 @@ body {
   letter-spacing: 0.8px;
   display: -ms-grid;
   display: grid;
-  grid-template: "nav " 60px "header" 500px "about" 300px "works" 400px "footer" 100px / 1fr;
+  grid-template: "nav " 60px "header" 500px "about" 300px "works" 400px "footer" 150px / 1fr;
+}
+
+a:hover {
+  color: #5983ff;
+  text-decoration: none;
 }
 
 li {
@@ -32,6 +37,10 @@ header h1 {
 
 nav {
   grid-area: nav;
+  background-color: lavender;
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 .gnav-list {
@@ -88,6 +97,8 @@ nav {
 footer {
   grid-area: footer;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 footer h2 {
